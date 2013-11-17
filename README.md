@@ -50,11 +50,11 @@ app.use(function* (next) {
 
 ## API
 
-### assertTimeout(fn, timeout, [logger])
+### assertTimeout(fn, timeout, [done])
 
 - `fn` - a thunk, generator, or generator function
 - `timeout` - timeout in milliseconds integer or a string
-- `logger` - optional logger if `fn` errors after `timeout`
+- `done` - optional callback called only when `fn` finishes executing after the timeout error is thrown
 
 ## License
 

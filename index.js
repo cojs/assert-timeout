@@ -21,12 +21,9 @@ module.exports = function (fn, timeout, logger) {
       done(err)
     }, timeout)
 
-    fn(function (err) {
-      if (called) {
-        if (logger && err)
-          logger(err)
-        return
-      }
+    fn(function () {
+      if (called)
+        return logger && logger.apply(ctx, arguments)
 
       clearTimeout(id)
       done.apply(ctx, arguments)
