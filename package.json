@@ -1,0 +1,34 @@
+{
+  "name": "co-assert-timeout",
+  "description": "Assert a thunk or generator's timeout co-style",
+  "version": "0.0.1",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/funraiseme/simgr.git"
+  },
+  "bugs": {
+    "mail": "me@jongleberry.com",
+    "url": "https://github.com/funraiseme/simgr/issues"
+  },
+  "dependencies": {
+    "ms": "~0.6.1",
+    "co": "~2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "make test;"
+  },
+  "engines": {
+    "node": ">= 0.11.3"
+  }
+}
