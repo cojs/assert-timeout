@@ -4,6 +4,6 @@ test:
 	@${BIN}mocha \
 		--require should \
 		--reporter spec \
-		--harmony
+		--harmony-generators
 
 .PHONY: test

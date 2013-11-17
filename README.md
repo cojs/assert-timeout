@@ -18,11 +18,11 @@ app.use(function* (next) {
 However, you generally don't want to do this.
 You only want to set a timeout when the client takes too long to do something,
 not you.
-Specifically, you should set a timeout only on the client sending a response:
+Specifically, you should set a timeout only on the client sending a request:
 
 ```js
 app.use(function* (next) {
-  var buffer = yield assertTimeout(this.request.buffer())
+  var buffer = yield assertTimeout(this.request.buffer(), '5 seconds')
 })
 ```
 
@@ -31,16 +31,20 @@ If you want to customize or handle the error yourself:
 ```js
 app.use(function* (next) {
   try {
-    var buffer = yield assertTimeout(this.request.buffer())
+    var buffer = yield assertTimeout(this.request.buffer(), '5 seconds')
   } catch (err) {
     if (err.status === 408) {
+      // assertTimeout's errors will have err.status = 408
       // let's make a new error with a custom message
       err = new Error('you took too long to upload')
       err.status = 408
     }
 
+    // rethrow the error
     throw err
   }
+
+  yield next
 })
 ```
 
