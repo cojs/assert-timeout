@@ -4,7 +4,7 @@ var ms = require('ms')
 module.exports = function (fn, timeout, logger) {
   return function (done) {
     if (isGenerator(fn) || isGeneratorFunction(fn))
-      fn = co.call(this, fn)
+      fn = co(fn)
     if (typeof timeout === 'string')
       timeout = ms(timeout)
     if (typeof timeout !== 'number')
@@ -22,7 +22,7 @@ module.exports = function (fn, timeout, logger) {
       done(err)
     }, timeout)
 
-    fn(function () {
+    fn.call(this, function () {
       if (called)
         return logger && logger.apply(ctx, arguments)
 

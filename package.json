@@ -18,10 +18,10 @@
     "url": "https://github.com/funraiseme/simgr/issues"
   },
   "dependencies": {
-    "ms": "~0.6.1",
-    "co": "~2.3.0"
+    "ms": "~0.6.1"
   },
   "devDependencies": {
+    "co": ">= 3.0.1",
     "mocha": "*",
     "should": "*"
   },
