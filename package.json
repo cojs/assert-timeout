@@ -1,7 +1,7 @@
 {
   "name": "co-assert-timeout",
   "description": "Assert a thunk or generator's timeout co-style",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Jonathan Ong",
     "email": "me@jongleberry.com",
