@@ -1,4 +1,4 @@
-# Co Assert Timeout [![Build Status](https://travis-ci.org/koajs/co-assert-timeout.png)](https://travis-ci.org/koajs/co-assert-timeout)
+# Co Assert Timeout [![Build Status](https://travis-ci.org/cojs/co-assert-timeout.png)](https://travis-ci.org/cojs/co-assert-timeout)
 
 Assert that a thunk or generator takes less than a certain amount of time.
 Note that it does not stop the thunk or generator from finish executing.
