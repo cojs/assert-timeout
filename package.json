@@ -11,17 +11,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/funraiseme/simgr.git"
+    "url": "https://github.com/cojs/assert-timeout.git"
   },
   "bugs": {
     "mail": "me@jongleberry.com",
-    "url": "https://github.com/funraiseme/simgr/issues"
+    "url": "https://github.com/cojs/assert-timeout/issues"
   },
   "dependencies": {
-    "ms": "~0.6.1"
+    "co": "~3.0.4",
+    "ms": "~0.6.2"
   },
   "devDependencies": {
-    "co": ">= 3.0.1",
     "mocha": "*",
     "should": "*"
   },
