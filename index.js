@@ -12,9 +12,9 @@ module.exports = function (fn, timeout, logger) {
 
     var ctx = this
     var called = false
+    var err = new Error('timeout of ' + timeout + 'ms exceeded')
 
     var id = setTimeout(function () {
-      var err = new Error('timeout of ' + timeout + 'ms exceeded')
       err.status = 408
       err.exposed = true
       err.timeout = timeout
