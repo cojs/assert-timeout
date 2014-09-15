@@ -18,7 +18,7 @@
     "url": "https://github.com/cojs/assert-timeout/issues"
   },
   "dependencies": {
-    "co": "~3.0.4",
+    "co": "3",
     "ms": "~0.6.2"
   },
   "devDependencies": {
