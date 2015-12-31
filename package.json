@@ -18,8 +18,8 @@
     "url": "https://github.com/cojs/assert-timeout/issues"
   },
   "dependencies": {
-    "co": "3",
-    "ms": "~0.6.2"
+    "co": "4.6.0",
+    "ms": "~0.7.1"
   },
   "devDependencies": {
     "mocha": "*",
