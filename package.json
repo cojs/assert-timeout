@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "co": "3",
-    "ms": "~0.6.2"
+    "ms": "~2.0.0"
   },
   "devDependencies": {
     "mocha": "*",
